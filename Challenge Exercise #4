@@ -1,0 +1,24 @@
+#Challenge Exercise #4
+class Customer:
+    def __init__(self, name, address, city, state, zipcode, age):
+        self.name = name
+        self.address = address
+        self.city = city
+        self.state = state
+        self.zipcode = zipcode
+        self.age = age
+
+    def display_info(self):
+        print(f"Name: {self.name}")
+        print(f"Address: {self.address}")
+        print(f"City: {self.city}")
+        print(f"State: {self.state}")
+        print(f"Zip Code: {self.zipcode}")
+        print(f"Age: {self.age}")
+
+
+# create Customer object
+my_customer = Customer("John Smith", "123 Main St", "Anytown", "CA", "12345", 35)
+
+# display customer info
+my_customer.display_info()

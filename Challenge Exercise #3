@@ -1,0 +1,45 @@
+#Challenge Exercise #3
+class Student:
+    def __init__(self, name, age, grade_level):
+        self.name = name
+        self.age = age
+        self.grade_level = grade_level
+
+    def display_info(self):
+        print(f"Name: {self.name}, Age: {self.age}, Grade Level: {self.grade_level}")
+
+
+class Address:
+    def __init__(self, address, city, state, zipcode):
+        self.address = address
+        self.city = city
+        self.state = state
+        self.zipcode = zipcode
+
+    def print_address(self):
+        print(f"{self.address}, {self.city}, {self.state} {self.zipcode}")
+
+
+# create Student1 object
+Student1 = Student("John Smith", 15, 9)
+
+# create Student2 object
+Student2 = Student("Jane Doe", 14, 8)
+
+# create Address object for Student1
+Student1_address = Address("123 Main St", "Anytown", "CA", "12345")
+
+# create Address object for Student2
+Student2_address = Address("456 Elm St", "Otherville", "NY", "54321")
+
+# display Student1 info and address
+print("Student1 information:")
+Student1.display_info()
+print("Address:")
+Student1_address.print_address()
+
+# display Student2 info and address
+print("Student2 information:")
+Student2.display_info()
+print("Address:")
+Student2_address.print_address()

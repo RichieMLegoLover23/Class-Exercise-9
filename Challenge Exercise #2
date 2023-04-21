@@ -1,0 +1,23 @@
+#Challenge Exercise #2
+class Teacher:
+    def __init__(self, name, room, course_assigned):
+        self.name = name
+        self.room = room
+        self.course_assigned = course_assigned
+
+    def display_info(self):
+        print(f"Name: {self.name}, Room: {self.room}, Course Assigned: {self.course_assigned}")
+
+
+# create Teacher1 object
+Teacher1 = Teacher("Mr. Smith", 101, "Math")
+
+# create Teacher2 object
+Teacher2 = Teacher("Ms. Johnson", 202, "English")
+
+# display Teacher1 and Teacher2 info
+print("Teacher1 information:")
+Teacher1.display_info()
+
+print("Teacher2 information:")
+Teacher2.display_info()

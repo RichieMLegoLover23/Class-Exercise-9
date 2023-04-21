@@ -1,0 +1,32 @@
+#Challenge Exercise #1
+class Student:
+    def __init__(self, name, age, grade):
+        self.name = name
+        self.age = age
+        self.grade = grade
+        
+    def display_info(self):
+        print(f"Name: {self.name}, Age: {self.age}, Grade: {self.grade}")
+
+# create Student1 object
+Student1 = Student("John", 16, 11)
+
+# create Student2 object
+Student2 = Student("Jane", 17, 12)
+
+# display Student1 and Student2 info
+print("Student1 information:")
+Student1.display_info()
+
+print("Student2 information:")
+Student2.display_info()
+
+# create Student3 object
+name = input("Enter student's name: ")
+age = int(input("Enter student's age: "))
+grade = int(input("Enter student's grade: "))
+Student3 = Student(name, age, grade)
+
+# display Student3 info
+print("Student3 information:")
+Student3.display_info()
